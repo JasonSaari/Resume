@@ -1,0 +1,83 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  color: #005a9c;
+}
+
+header p {
+  margin: 0.3em 0;
+}
+
+header a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 1.5em;
+  color: #005a9c;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* Job titles */
+.job h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #333;
+}
+
+.job p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 1.3em;
+  }
+
+  .job h3 {
+    font-size: 1.1em;
+  }
+}
