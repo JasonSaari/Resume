@@ -5,8 +5,8 @@ body {
 }
 
 :root {
-  --primary: #457A3D;   /* main green */
-  --accent: #46A537;    /* bright accent */
+  --primary: #395035;   /* main green */
+  --accent: #2C332B;    /* bright accent */
   --dark: #395035;      /* darker green */
   --darkest: #2C332B;   /* near-black green */
   --muted-bg: #f4f7f2;  /* very light background */
