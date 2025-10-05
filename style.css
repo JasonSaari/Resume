@@ -1,8 +1,23 @@
 /* Base styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  /* color palette variables */
+}
+
+:root {
+  --primary: #457A3D;   /* main green */
+  --accent: #46A537;    /* bright accent */
+  --dark: #395035;      /* darker green */
+  --darkest: #2C332B;   /* near-black green */
+  --muted-bg: #f4f7f2;  /* very light background */
+  --panel-bg: #ffffff;  /* panel background */
+  --muted-border: #e6ebe5;
+  --text: #243028;      /* readable text color */
+}
+
+body {
+  background-color: var(--muted-bg);
+  color: var(--text);
   margin: 40px;
   line-height: 1.6;
 }
@@ -16,7 +31,7 @@ header {
 header h1 {
   font-size: 2.5em;
   margin-bottom: 0.2em;
-  color: #35503D; /* Dark green color */
+  color: var(--primary);
 }
 
 header p {
@@ -24,7 +39,7 @@ header p {
 }
 
 header a {
-  color: #3D7A4F; /* Medium green color */
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -35,8 +50,8 @@ header a:hover {
 /* Section titles */
 section h2 {
   font-size: 1.5em;
-  color: #487A3D;
-  border-bottom: 1px solid #ccc;
+  color: var(--dark);
+  border-bottom: 1px solid var(--muted-border);
   padding-bottom: 5px;
   margin-top: 40px;
 }
@@ -45,7 +60,7 @@ section h2 {
 .job h3 {
   font-size: 1.2em;
   margin-top: 20px;
-  color: #333;
+  color: var(--darkest);
 }
 
 .job p {
@@ -93,8 +108,8 @@ li {
 .left-column {
   /* left column becomes a sidebar */
   box-sizing: border-box;
-  background: #ffffff;
-  border-right: 1px solid #e6e6e6;
+  background: var(--panel-bg);
+  border-right: 1px solid var(--muted-border);
   padding: 20px 16px;
   height: fit-content;
   position: sticky;
