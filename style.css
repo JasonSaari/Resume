@@ -81,3 +81,45 @@ li {
     font-size: 1.1em;
   }
 }
+
+/* Two-column layout for resume content */
+.resume-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.left-column {
+  /* left column becomes a sidebar */
+  box-sizing: border-box;
+  background: #ffffff;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px 16px;
+  height: fit-content;
+  position: sticky;
+  top: 24px; /* remains visible while scrolling */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  border-radius: 4px;
+}
+
+.right-column {
+  /* main content */
+  box-sizing: border-box;
+  padding-left: 8px;
+}
+
+/* Ensure columns stack on small screens */
+@media (max-width: 900px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .left-column {
+    position: static; /* disable sticky for stacked layout */
+    background: transparent;
+    border-right: none;
+    padding: 0;
+    border-radius: 0;
+  }
+}
